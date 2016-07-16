@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>c7n.space</title>
+</head>
+<body>
+<h1>c7n.space</h1>
+<p>Letter-number-letter contractions are dumb. The collision space for them is huge – for example, is “c7n” short for “confusion?” Or perhaps “chieftan?” (Of course, it’s “collision,” but you couldn’t know that.)</p>
+<p>This tool exists to highlight the problem. Type in any contraction of this form and you’ll get a list of words that contract to it. Don’t blame me if your favorite word isn’t there; I just pulled the words from /usr/share/dict/words on OSX 10.11.5.</p>
+<p>More languages might come in the future.</p>
+<form>
+    Contraction:
+    <input type="text" name="contraction" id="contraction">
+    <button id="fetch">Load List</button>
+</form>
+<div id="results">
+</div>
+</body>
+</html>
+<script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+<script src="fetch.js"></script>
