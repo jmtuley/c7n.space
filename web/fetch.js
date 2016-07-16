@@ -14,7 +14,7 @@ function fetch(contraction) {
     type: 'GET',
     dataType: 'json',
   }).done(function(json) {
-    link = "<p>Share a <a href=" + baseURL() + "?c=en/" + contraction + ">link to these results.</a></p>\n";
+    link = "<p>Share a <a href=" + baseURL() + "?c=en/" + contraction + ">link to these " + json.words.length + " results</a>.</p>\n";
     list = '<ul>' + $.map(json.words, function(w) { return '<li>' + w + '</li>' }).join('\n') + '</ul>';
     $('#results').html(link + list);
   }).fail(function(xhr, status, error) {
