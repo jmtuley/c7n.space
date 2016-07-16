@@ -1,7 +1,7 @@
 $button = $('#fetch');
 
 $button.on('click', function() {
-    val = $('#contraction').val();
+    val = $('#contraction').val().toLowerCase();
 
     $.ajax({
         url: 'en/' + val + '.json',
